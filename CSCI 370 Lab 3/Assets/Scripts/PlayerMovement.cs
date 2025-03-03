@@ -47,9 +47,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("horizontal", horizontal);
         if (Input.GetKeyDown("space") && !animator.GetBool("jump") && jumpCount < maxJumps)
         {
-            rigidbody2D.AddForce(Vector2.up * 2000);
+            rigidbody2D.AddForce(Vector2.up * 700);
             animator.SetBool("jump", true);
-            Debug.Log("Jump is now true");
             jumpCount++;
             Debug.Log("Jump: " + jumpCount);
         }
@@ -67,17 +66,17 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D.linearVelocity = new Vector2(horizontal * runSpeed, rigidbody2D.linearVelocity.y);
 
         bool wasGrounded = m_Grounded;
-        ;
         m_Grounded = false;
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
+                jumpCount = 0;
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
@@ -86,9 +85,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Landed()
     {
-        jumpCount = 0;
         animator.SetBool("jump", false);
-        Debug.Log("If seen, jumpcount should reset");
+        jumpCount = 0;
     }
 
 }

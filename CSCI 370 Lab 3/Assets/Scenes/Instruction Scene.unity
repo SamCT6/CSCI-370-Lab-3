@@ -1604,43 +1604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86832f84a0cf34eb9b89129d49b7a15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startConfig: {fileID: 11400000, guid: 6adb959626b904caca730305a43e0053, type: 2}
-  crtRenderSettings: {fileID: 11400000, guid: 2d929546960894d169f1999a321e4ff4, type: 2}
-  _runtimeMaterial: {fileID: 0}
-  data:
-    pixelationAmount: 0
-    maxColorChannels:
-      red: 0
-      green: 0
-      blue: 0
-      greyScale: 0
-    dithering4: 0
-    dithering8: 0
-    vignette: 0.106
-    innerCurve: 4.7
-    monitorCurve: 0
-    monitorInnerSize:
-      width: 0
-      height: 0
-    monitorOutterSize:
-      width: 0.096
-      height: 0.1
-    zoom: 1.31
-    monitorRoundness: 0.2
-    monitorTexture: {fileID: 2800000, guid: a5e897f9f29eb488ba4791cd52d004b5, type: 3}
-    monitorColor:
-      r: 0.12867041
-      g: 0.1254902
-      b: 0.21568628
-      a: 0.5254902
-    innerMonitorDarkness: 0.596
-    innerMonitorShine: 0.25
-    colorScans:
-      greenChannelMultiplier: -0.048
-      redBlueChannelMultiplier: 0.048
-      sizeMultiplier: 1
-    innerMonitorShineRadius: -0.087
-    innerMonitorShineCurve: 10
 --- !u!1 &1165644435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,7 +1745,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.057922006}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1792,7 +1755,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.875, y: 0.9375}
+  m_Size: {x: 0.875, y: 1.053344}
   m_EdgeRadius: 0
 --- !u!50 &1165644440
 Rigidbody2D:
@@ -1831,7 +1794,7 @@ Animator:
   m_GameObject: {fileID: 1165644435}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f4b71a327f08b74ba73d82abe988b3c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
