@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     float horizontal;
 
-    private int jumpCount = 0;
+    public int jumpCount = 0;
     private const int maxJumps = 2;
     public float runSpeed = 5f;
     private bool m_Grounded;
@@ -52,10 +52,7 @@ public class PlayerMovement : MonoBehaviour
             jumpCount++;
             Debug.Log("Jump: " + jumpCount);
         }
-
-
-
-        OnLandEvent.AddListener(Landed);
+        //OnLandEvent.AddListener(Landed);
     }
 
     // Update is called once per frame
@@ -70,13 +67,13 @@ public class PlayerMovement : MonoBehaviour
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
-                jumpCount = 0;
+                //jumpCount = 0;
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
             }
@@ -87,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("jump", false);
         jumpCount = 0;
+        Debug.Log("I reset to 0");
     }
 
 }
