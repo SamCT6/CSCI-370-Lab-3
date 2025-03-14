@@ -4,6 +4,9 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private float searchRange;
+
+    [SerializeField] private int jumpForce;
 
     private Rigidbody2D rigidbody2D;
     private SpriteRenderer spriteRenderer;
@@ -45,9 +48,9 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
         animator.SetFloat("horizontal", horizontal);
-        if (Input.GetKeyDown("space") && !animator.GetBool("jump") && jumpCount < maxJumps)
+        if (Input.GetKeyDown("space") && jumpCount < maxJumps)
         {
-            rigidbody2D.AddForce(Vector2.up * 700);
+            rigidbody2D.AddForce(Vector2.up * jumpForce);
             animator.SetBool("jump", true);
             jumpCount++;
             Debug.Log("Jump: " + jumpCount);
@@ -67,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.2f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, searchRange);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)

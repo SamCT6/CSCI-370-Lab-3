@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class FinishLine : MonoBehaviour
+public class Boundry : MonoBehaviour
 {
         [SerializeField] private string newGameLevel = "";
     private void OnTriggerEnter2D(Collider2D collision)
