@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
         animator.SetFloat("horizontal", horizontal);
-        if (Input.GetKeyDown("space") && jumpCount < maxJumps)
+        if (Input.GetKeyDown(KeyCode.W) && jumpCount < maxJumps)
         {
             rigidbody2D.AddForce(Vector2.up * jumpForce);
             animator.SetBool("jump", true);
