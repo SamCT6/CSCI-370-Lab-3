@@ -2050,7 +2050,7 @@ GameObject:
   - component: {fileID: 207111370}
   - component: {fileID: 207111369}
   m_Layer: 0
-  m_Name: NPC1 (1)
+  m_Name: NPC2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2083,9 +2083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41974f54436c6140a0db31eace63a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Final1: {fileID: 736315136}
-  Final2: {fileID: 598964920}
-  Final3: {fileID: 1746346838}
+  Final1: {fileID: 916002851}
+  Final2: {fileID: 974462684}
+  Final3: {fileID: 82315865}
 --- !u!61 &207111370
 BoxCollider2D:
   m_ObjectHideFlags: 0
