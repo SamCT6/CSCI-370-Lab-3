@@ -227,7 +227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But now I need a liitle break...
+  m_text: Don't give up! Keep on going!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7462067d1a325e141bd2b4bea5e5bab3, type: 2}
   m_sharedMaterial: {fileID: 2509882183505385352, guid: 7462067d1a325e141bd2b4bea5e5bab3, type: 2}
@@ -2065,7 +2065,7 @@ Transform:
   m_GameObject: {fileID: 207111367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -353.59, y: -334.8875, z: 0}
+  m_LocalPosition: {x: -282.46, y: -322.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4367,7 +4367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Howdy there traveler!
+  m_text: Woah, you made It up really far!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7462067d1a325e141bd2b4bea5e5bab3, type: 2}
   m_sharedMaterial: {fileID: 2509882183505385352, guid: 7462067d1a325e141bd2b4bea5e5bab3, type: 2}
@@ -4432,7 +4432,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -68.25111, w: 0}
+  m_margin: {x: 0, y: 0, z: -93.49467, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4503,7 +4503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I wanted to go for a walk.
+  m_text: If you keep going, you'll get where you need to go.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7462067d1a325e141bd2b4bea5e5bab3, type: 2}
   m_sharedMaterial: {fileID: 2509882183505385352, guid: 7462067d1a325e141bd2b4bea5e5bab3, type: 2}
@@ -4568,7 +4568,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -68.251015, w: 0}
+  m_margin: {x: 0, y: 0, z: -129.4899, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
